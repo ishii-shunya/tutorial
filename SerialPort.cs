@@ -29,8 +29,12 @@ public class PortChat
         _serialPort.Handshake = SetPortHandshake(_serialPort.Handshake);
 
         // Set the read/write timeouts
-        _serialPort.ReadTimeout = 500;
-        _serialPort.WriteTimeout = 500;
+// 2017/06/15 ※タイムアウト時間変更 Change -->
+        //_serialPort.ReadTimeout = 500;
+        //_serialPort.WriteTimeout = 500;
+        _serialPort.ReadTimeout = 1000;
+        _serialPort.WriteTimeout = 1000;
+// 2017/06/15 ※タイムアウト時間変更 Change <--
 
         _serialPort.Open();
         _continue = true;
