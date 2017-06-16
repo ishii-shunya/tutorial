@@ -9,7 +9,10 @@ public class StateObject {
     // Client  socket.
     public Socket workSocket = null;
     // Size of receive buffer.
-    public const int BufferSize = 1024;
+// 2017/06/15 ※Tcpバッファサイズ変更 Change -->
+    //public const int BufferSize = 1024;
+    public const int BufferSize = 2048;
+// 2017/06/15 ※Tcpバッファサイズ変更 Change <--
     // Receive buffer.
     public byte[] buffer = new byte[BufferSize];
 // Received data string.
