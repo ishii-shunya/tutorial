@@ -12,6 +12,9 @@ public class PortChat
 
     public static void Main()
     {
+// 2017/06/15 ※変数追加 Add -->
+        string testtest;
+// 2017/06/15 ※変数追加 Add <--
         string name;
         string message;
         StringComparer stringComparer = StringComparer.OrdinalIgnoreCase;
