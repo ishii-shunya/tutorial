@@ -175,7 +175,9 @@ public class PortChat
     public static Handshake SetPortHandshake(Handshake defaultPortHandshake)
     {
         string handshake;
-
+// 2017/06/15 ※定数追加 Add -->
+        const string TEST_CONST = "test const";
+// 2017/06/15 ※定数追加 Add <--
         Console.WriteLine("Available Handshake options:");
         foreach (string s in Enum.GetNames(typeof(Handshake)))
         {
